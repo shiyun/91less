@@ -1,0 +1,209 @@
+@import "var";
+@import "mixins";
+
+.btnAct,.btnUpload,.btnCancel,.btnUpload em,.btnCancel em,.btnUFile,.rightIcon,.qIcon,.btnImg,.btnView,.menuAct li,.btnUpImg,.tLeft,.tRight,.btnComment {&:extend(.btn);}
+.activeLeftCont dd .cur,.actDateInput,.actTimeInput,.btnWant,.delAct {display:inline-block;background:url(http://static.91money.com/img/nav.png) no-repeat;}
+.w315 {width:315px;}
+.w118 {width:118px;}
+.w85 {width:85px;}
+.w235 {width:235px;}
+.w185 {width:185px !important;}
+.h950 {min-height:950px;_height:950px;}
+.mtb20 {margin:20px 0;}
+.mt50 {margin-top:50px;}
+.redIcon {position:absolute;margin-left:-10px;*margin-top:-2px;}
+
+/*****  btn flag  *****/
+.btnUpload,.btnCancel {height:30px;padding-left:15px;}
+.btnUpload {background-position:0 -879px;}
+.btnCancel {background-position:0 -909px;}
+.btnUpload em,.btnCancel em {display:inline-block;margin-right:-1px;padding-right:15px;color:#fff;font:12px/28px SimHei;_position:relative;}
+.btnUpload em {background-position:right -879px;}
+.btnCancel em {background-position:right -909px;}
+.rightIcon {background-position:-196px -806px;height:28px;width:27px;/*vertical-align:-5px;*/}
+.qIcon {background-position:-200px -943px;height:32px;width:22px;vertical-align:-7px;}
+.btnComment {background-position:-65px -1038px;height:24px;width:55px;}
+.delAct {background-position:right -918px;height:18px;width:24px;padding-right:16px;font-family:SimHei;line-height:21px;position:absolute;right:0;top:5px;}
+.delAct em {color:#666;visibility:hidden;}
+.delAct:hover {background-position:right -936px;text-decoration:none;}
+.delAct:hover em {visibility:visible;}
+
+.btnUFile:hover {text-decoration:none;}
+
+.header {position:relative;z-index:996;}
+.activeCont2 {background-color:#EBE8E5;position:relative;z-index:2;position:static\9;}
+.activeCont3 {padding-top:30px;}
+.borderCRight {width:839px;min-height:620px;_height:620px;}
+.activeLeftCont {border:1px solid #D6D4D4;width:132px;margin:0 auto;}
+.activeLeftCont dt {color:#481c01;font:16px/30px 'Microsoft Yahei';text-align:center;border-bottom:1px solid #D6D4D4;background-image:-webkit-gradient(linear,left top,left bottom,from(#FEFEFE),to(#F4F4F4));background-image:-webkit-linear-gradient(top,#FEFEFE,#F4F4F4);background-image:-moz-linear-gradient(top,#FEFEFE,#F4F4F4);filter:e(" progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FFFEFEFE,endColorStr=#FFF4F4F4)");zoom:1;}
+.activeLeftCont dd {margin:0 auto;border-bottom:1px solid #D6D4D4;}
+.activeLeftCont dd a {color:#683802;display:block;height:32px;line-height:32px;padding-left:32px;}
+.activeLeftCont dd a:hover,.activeLeftCont dd .cur {/*background-color:#EBE8E5;*/color:#864904;background-position:2px -686px;display:block;}
+.btnAct {background-position:-85px -1095px;height:32px;width:140px;_background:url(http://static.91money.com/img/ie6/btnact.gif) no-repeat;}
+
+.aStep {background:url(http://static.91money.com/img/active/step_act.png);display:block;height:37px;width:521px;}
+.aStep1 {background-position:0 0;}
+.aStep2 {background-position:0 -37px;}
+.aStep3 {background-position:0 -74px;}
+.tableAct td {padding:10px 0;}
+.titAct {color:#000;font-size:14px;white-space:nowrap;}
+.selectAct {float:left;margin-top:3px;}
+.actDateInput {background-position:right -719px;width:80px;}
+.actTimeInput {background-position:right -744px;width:58px;}
+.timeWrap {width:70px;position:relative;margin-left:12px;float:left;*display:inline;}
+.timeWrap .regInput {float:none;}
+.timeWrapOption {width:70px;position:absolute;left:0;top:27px;display:none;}
+.timeWrapOption a {display:block;height:26px;line-height:26px;}
+.ziEM {float:left;display:inline-block;line-height:28px;zoom:1;margin:0 9px;}
+.viewMap {color:#683802;display:block;clear:both;margin-top:5px;outline:none;}
+.tsPerson {float:left;margin-left:10px;}
+.personNum {float:left;}
+.personRadio {float:left;margin-top:2px;margin-top:-2px@iehack;}
+.textareaWrap {width:100%;height:170px;}
+
+.imgAct {margin-top:25px;}
+.actChoseImg {float:left;margin-left:20px;font-family:SimHei;height:252px;position:relative;}
+.choseImgTit {color:#000;font-size:14px;margin:20px 0;}
+.choseImgType {font-size:12px;color:#666;}
+.btnUFile {background-position:-157px -772px;height:32px;width:68px;overflow:hidden;position:relative;cursor:pointer;text-align:center;color:#fff;font:16px/32px SimHei;}
+.actBtns {position:absolute;bottom:0;left:0;white-space:nowrap;}
+
+/*****  list  *****/
+.actTit dd em {display:inline-block;width:55px;cursor:pointer;}
+.actTit dt a {background-image:none;background-color:#D2A572;color:#fff;}
+.actTit dt .cur {background:url(http://static.91money.com/img/nav.png) 10px -580px no-repeat #D2A572;}
+
+.otherCity {float:left;margin-right:10px;position:relative;z-index:2;}
+.cityNameShow,.otherCityUrl {color:#999;padding-top:2px;}
+.otherCityUrl {color:#000;-webkit-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;border:1px solid #fff;border-bottom:none;display:inline-block;padding:2px 10px 0;height:28px;zoom:1;position:relative;z-index:2;}
+.otherCityUrl s {border:4px dashed;border-color:#000 transparent transparent transparent;border-top-style:solid;line-height:0;position:relative;top:-2px;left:3px;}
+.tsInfoIndex {border:1px solid #CFB394;background-color:#F5F0E9;color:#333;position:absolute;left:0;top:30px;width:340px;visibility:hidden;z-index:1;}
+.otherCity:hover .otherCityUrl {background-color:#F5F0E9;border-color:#CFB394;color:#333;}
+.otherCity:hover .tsInfoIndex {visibility:visible;}
+*html .otherCityIE6 .otherCityUrl {background-color:#F5F0E9;border-color:#CFB394;color:#333;}
+*html .otherCityIE6 .tsInfoIndex {visibility:visible;color:#333;}
+
+.actRWid,.actList li {float:right;width:786px;padding:0 12px;}
+.yourOption {border-top:2px solid #E7E7E7;border-bottom:2px solid #E7E7E7;height:34px;line-height:34px;font-size:13px;color:#333;}
+.yourOption em {color:#f00;margin-right:10px;}
+.actListWrap {padding:5px 0;}
+.actList li {border-bottom:1px dotted #ccc;padding-bottom:20px;margin-top:20px;}
+
+.aCitys {border-bottom:1px dotted #ccc;padding-bottom:5px;line-height:1.8;margin:8px 10px;}
+.aCitys dt {color:#864904;margin-right:20px;width:50px;float:left;text-align:right;}
+.aCitys dd {float:left;width:250px;}
+.areaCont a {color:#333;margin-right:10px;white-space:nowrap;display:inline-block;}
+.areaCont a:hover,.areaCont .cur {color:#8B4F11;text-decoration:underline;}
+
+.actImg {float:left;}
+.actListRight {float:left;color:#000;width:665px;}
+.actListRight p {margin-bottom:5px;}
+.actTitle {color:#000;}
+.actTitle:hover,a.c6:hover {text-decoration:underline;}
+.btnImg {height:32px;width:62px;background-position:0 -974px;}
+.btnImg2,.btnImg:hover {background-position:-63px -974px;}
+.btnImgSpan {position:absolute;bottom:0;right:0;}
+
+.rightDitu {border:1px solid #E6E6E6;height:216px;background:url(http://static.91money.com/img/base/smallloading.gif) center no-repeat;}
+.btnView {background-position:-60px -155px;height:24px;width:90px;position:absolute;bottom:10px;right:10px;}
+
+.actHeader {}
+.actImage {width:180px;text-align:center;float:left;margin-right:10px;}
+.actInfo {color:#000;font-family:SimHei;width:500px;}
+.actInfo dt,.actInfo dd {margin-bottom:12px;}
+.actInfo dt {font-size:17px;}
+.actInfo dd {padding-left:8px;}
+.wantTo {border-top:1px solid #E7E7E7;border-left:1px solid #E7E7E7;}
+.btnWant {border-right:1px solid #E7E7E7;border-bottom:1px solid #E7E7E7;color:#666;height:30px;line-height:30px;padding:0 9px 0 28px;float:left;}
+.btnWant1 {background-position:0 -778px;}
+.btnWant2 {background-position:0 -812px;}
+.btnWant3 {background-position:0 -846px;}
+.btnWant4 {background-position:0 -880px;}
+.btnWant:hover {background-color:#E7E7E7;}
+.backAct {color:#f90;float:right;margin-top:5px;font-family:SimHei;}
+
+.menuAct {border-bottom:1px solid #B79874;}
+.menuAct li {float:left;color:#864904;height:28px;width:112px;font:14px/30px "\5b8b\4f53";background-position:-65px -1009px;position:relative;bottom:-1px;_bottom:-4px;text-indent:22px;_background:url(http://static.91money.com/img/ie6/curli.png) no-repeat;}
+.actOperate a {color:#666;margin-right:25px;}
+
+.aCont {margin-top:30px;padding:10px;font-size:14px;}
+.aContP {line-height:2;margin:10px 0;text-indent:2em;}
+.contact {height:216px;width:367px;background:url(http://static.91money.com/img/active/bg_mp.png) no-repeat;margin:10px 0;}
+.contact p {padding:30px 0 0 60px;line-height:2.2;font-size:12px;}
+.contact p strong {font:14px/2.2 'Microsoft Yahei';}
+.contact a,.contact em {color:#157CCE;}
+.contact em {overflow:hidden;display:inline-block;width:210px;vertical-align:text-top;line-height:1.6;margin-top:-1px;}
+.actH2 {border-bottom:1px solid #B79874;color:#864904;font:16px/40px SimHei;z-index:333;}
+.actH2 em {font-size:12px;}
+.btnUpImg {background-position:-126px -982px;height:24px;width:86px;float:right;margin:10px 10px 0 0;overflow:hidden;}
+.actPhoto {margin:15px 0 30px;z-index:1;zoom:1;}
+.photoListWrap {width:670px;height:109px;overflow:hidden;margin:0 auto;}
+.actPhotoList li {float:left;text-align:center;width:134px;}
+.actPhotoList li a {display:block;height:105px;width:120px;padding:2px;}
+.actPhotoList .cur a {background-color:#f90;}
+.tLeft,.tRight {height:17px;width:9px;position:absolute;top:45px;}
+.tLeft {background-position:-193px -233px;left:0;}
+.tRight {background-position:-202px -233px;right:0;}
+.actCommentWrap {padding:15px;}
+.commentArea {background-color:#F9F9F9;padding:10px 15px;}
+.cTextarea {border:1px solid #ccc;height:58px;width:100%;}
+.charNum {color:#666;font:700 14px/29px 'Microsoft Yahei';text-align:right;}
+
+.commentList {margin-top:25px;}
+.commentList li {zoom:1;position:relative;border-bottom:1px dotted #999;padding:15px 0;}
+.commentCont dt,.commentCont dd {float:left;}
+.commentCont dt {width:50px;margin-right:15px;}
+.commentCont dd {width:555px;}
+.actUserName {color:#864904;text-align:center;display:block;word-break:break-all;word-wrap:break-word;}
+.commentTxt {width:555px;}
+.pTimeReply {margin-top:40px;}
+.actTime {color:#666;float:left;font-family:SimHei;line-height:28px;}
+.commentCont dd .commentArea {background:none;padding:0;margin-top:8px;}
+.commentCont dd .cTextarea {padding:0;width:593px;_width:587px;} 
+.cancelAct {color:#946d25;font:12px/28px SimHei;}
+
+.tempTsInfo {padding:38px 0 0 227px;}
+.tsInfoTit {border-bottom:1px solid #C2C2C2;font:14px/40px SimHei;color:#333;display:block;padding-left:15px;}
+.tsMsg {text-align:center;padding:35px 0;font:18px 'Microsoft Yahei';}
+.btnBottomP {background-color:#F0F0F0;height:20px;text-align:right;padding:10px;}
+
+.tableUpload {line-height:1.6;color:#333;}
+.tableUpload td {padding:20px 0 0;}
+.uploadAct,.uploadActArea {border:1px solid #999;padding:0 0 0 5px;width:305px;}
+.uploadAct {height:30px;line-height:30px;}
+.uploadActArea {height:100px;line-height:1.6;}
+.btnsAct {width:310px;margin-top:10px;}
+.actLayerTit {font:14px SimHei;display:block;}
+.tableActLayer td {padding:8px 0 0 10px;}
+.uploadAct::-webkit-input-placeholder,.uploadAct:placeholder {color:#b3b2b2;font:13px/30px SimHei;}
+.sendAct .uploadAct {vertical-align:bottom;margin-right:10px;}
+.errorAct {color:#c00;margin:5px 0 4px;}
+.errorAct,p.c6 {font-family:SimHei;}
+.copySuccess {padding:25px 0 25px 38px;}
+.copyInfo {float:left;text-align:left;margin-top:5px;}
+.copyInfo em {/*font-size:12px;*/display:block;margin-top:10px;}
+
+.actName,.photoShow {color:#000;font-family:SimHei;}
+.actName {font-size:17px;}
+.photoInfo {border-bottom:2px solid #E7E7E7;line-height:2.6;}
+.photoWrap {margin:20px auto;width:650px;position:relative;*zoom:1;}
+.pLeft,.pRight {display:block;position:absolute;top:0;height:100%;_height:e("expression(this.parentNode.offsetHeight)");width:50%;background:url(about:blank);outline:none;}
+.pLeft {left:0;cursor:url(http://static.91money.com/img/active/toleft.cur),auto;}
+.pRight {right:0;cursor:url(http://static.91money.com/img/active/toright.cur),auto;}
+.photoTxt {font-size:14px;padding:10px 0;}
+.photoUser {color:#864904;}
+.photoShow .actPhoto {border-bottom:2px solid #e7e7e7;padding-bottom:15px;}
+
+.tablePro {margin:0 auto;border:1px solid #E9E9E9;}
+.tablePro th,.tablePro td {text-align:left;line-height:1.8;padding:10px 10px 0;}
+.tablePro th {border-bottom:2px solid #E7E7E7;padding:0 10px;line-height:3.2;}
+.tablePro td {padding:0 10px;height:18px;}
+
+.oOperate {color:#946D25;padding:3px 8px 5px;*padding:0 8px;_padding:0 8px 2px;zoom:1;}
+.oOperate:hover{background-color:#946D25;color:#fff;-webkit-border-radius:4px;border-radius:4px;text-decoration:none;}
+
+.aStep3Cont {margin-top:30px;border:1px solid #E9E9E9;}
+.aStep3Cont .tsMsg {text-align:left;margin:30px 30px 30px 200px;color:#834301;}
+.clickViewAct {display:block;color:#333;font-size:14px;margin-left:46px;line-height:4;}
+
+.mt-10 {margin-top:-10px;}

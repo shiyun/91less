@@ -1,0 +1,220 @@
+@import "var";
+@import "mixins";
+.f16 {font-size:16px;}
+.c-d4 {color:#d4d4d4;}
+.mb20 {margin-bottom:20px;}
+/*****  new header  *****/
+.newHeader {
+	.grad(#F1F1F1,#E4E4E4);
+	height:26px;border-bottom:1px solid #d2d2d2;
+}
+.mapHeader {float:left;margin-left:50px;width:1000px;}
+.uInfo {margin-top:4px;}
+.colorReg {color:#b38412;}
+.w355 {width:355px;}
+.rightIcon,.btnVer,.btnPass,.regIcon,.btnAskFor,.btnLogin,.btnLogin2,.btnDownLoad,.downLoadBook,.telNum,.btnReset,.emailLogin,.passLogin,.emailLi,.phoneLi {&:extend(.btn);}
+.btnLoginNew {background:url("@{url}/newicons.png") no-repeat;display:inline-block;*zoom:1;}
+.btnPass {color:#fff;background-position:0 -1095px;width:85px;height:23px;text-align:center;font:12px/23px 'Microsoft Yahei';}
+.btnVer {height:38px;width:128px;background-position:right -1127px;font:14px/38px 'Microsoft Yahei';text-align:center;color:#fff;}
+.btnPass:hover,.btnVer:hover,.btnReset:hover,.userSignIn a:hover,.btnLoginNew:hover,.btnBlue:hover {text-decoration:none;}
+
+em {font-family:"\5b8b\4f53";} /*****  .btnBlue,  *****/
+.uInfoName em {font-family:Tahoma,Helvetica,Arial,sans-serif;}
+
+.productName {border:none;-webkit-border-radius:none;-moz-border-radius:none;border-radius:none;}
+.productName a {color:#333;}
+.productName2 a {margin-right:9px;}
+
+.contReg {border:1px solid #CDCDCD;background:url("@{url}/reg/bg_right_new.gif") right 0 repeat-y;color:#000;min-height:700px;_height:700px;margin-top:40px;}
+.cLeft {width:700px;}
+.cRight {width:280px;}
+
+.stepLine {height:6px;background:url("@{url}/reg/reg_line.gif") repeat-x;_position:relative;}
+.step {background:url("@{url}/reg/step.png") no-repeat;float:right;height:31px;width:312px;margin-top:-13px;_position:relative;}
+.step2 {background-position:0 -30px;}
+.step3 {background-position:0 -61px;}
+.stepXW,.stepXW2 {width:194px;}
+.stepXW {background-position:0 -93px;}
+.stepXW2 {background-position:0 -124px;}
+
+.contStep1 {margin-left:20px;font-size:14px;}
+.contStep1 select {/*width:105px;*/border:1px solid #ABADB3;margin-right:10px;}
+.xwContStep {margin-top:40px;}
+.contStep1 td {padding-bottom:20px;vertical-align:top;}
+.contStep1 input[type="radio"] {vertical-align:top;}
+.btnNext {background-position:0 -235px;color:#fff;height:47px;width:142px;font:22px/47px 'Microsoft Yahei';text-align:center;}
+.btnNext2 {background-position:0 -644px;}
+.btnNext:hover,.btnNext2:hover {text-decoration:none;}
+.btnReset {background-position:0 -693px;height:23px;width:85px;text-align:center;font:14px/22px SimHei;color:#fff;}
+.regImg {color:#000;margin:20px;line-height:2;font-size:14px;_position:relative;}
+.labTD label {width:94px;float:left;margin-bottom:15px;white-space:nowrap;}
+.uploadImgWrapper,.uploadTxt {margin:20px 30px;}
+.regWay {border-bottom:3px solid #F4F4F4;}
+.regWay li {width:180px;height:47px;display:none;margin-left:20px;}
+.regWay .emailLi {background-position:0 -827px;}
+.regWay .phoneLi {background-position:0 -816px;}
+.regWay .cur {/*background-color:#f4f4f4;color:#010066;*/display:block;}
+.regIcon {background-position:-176px -157px;height:22px;width:30px;margin-right:5px;_margin:10px 5px 10px 0;vertical-align:middle;}
+.regIcon2 {background-position:-154px -155px;height:26px;width:18px;}
+.regWayCont {}
+.regWayCont li {display:none;}
+.regWayCont .cur {display:block;}
+.fillInfo {color:#999;clear:both;font-size:12px;padding-top:5px;}
+.changeImg {color:#666;font-size:12px;}
+.changeImg a {color:#94540C;}
+.mlr10 img {vertical-align:middle;}
+.btnAskFor {background-position:0 -283px;color:#fff;font:14px/24px 'Microsoft Yahei';height:26px;width:88px;text-align:center;}
+.applyAlpha {font-size:18px;display:block;}
+.hrLine {background-color:#DBDADC;color:#DBDADC;border-bottom:1px solid #fcfcfc;*height:2px;margin:0 20px 10px;}
+
+.regSuccess {margin:70px 0 0 165px;}
+.regSuccess p {line-height:5;}
+.succInfo {color:#333;font-size:24px;}
+.regSuccess .btnNext {font-size:16px;}
+
+/*****  login  *****/
+.noMember {color:#834301;font:30px SimHei;}
+.btnLogin,.btnLogin2 {background-position:0 -310px;color:#fff;height:47px;width:142px;text-align:center;font:22px/47px SimHei;}
+.btnLogin:hover,.btnLogin2:hover {text-decoration:none;}
+.btnLogin2 {background-position:0 -717px;}
+.tableLogin {margin:10px auto;font-size:14px;}
+.contReg2 .tableLogin {margin:10px 0 0 30px;}
+.forgotPass {color:#666;text-decoration:underline;padding-top:2px;margin-left:50px;}
+.emailLogin,.passLogin {width:155px;padding-left:25px;}
+.passLogin {background-position:-205px -654px;}
+.emailLogin {background-position:-204px -675px;}
+.borderWrap {/*border:5px solid #F5F5F5;*/zoom:1;}
+.huoLine {font:0/0 arial;border-top:1px solid #CACACA;border-bottom:1px solid #fff;margin:0 15px 40px;*margin:0 15px 5px;_zoom:1;}
+.huo {background-color:#fff;border:3px solid #bbb;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;display:block;font:18px/34px 'Microsoft Yahei';height:34px;width:34px;text-align:center;position:absolute;left:50%;bottom:-21px;margin-left:-21px;}
+.parentLogin dt {font-size:14px;margin:40px 0 20px;}
+.loginIcon {background:url("@{url}/reg/icon_wb.png");display:inline-block;height:32px;width:89px;margin-right:20px;}
+.loginQQ {background-position:0 -32px;}
+.loginRR {background-position:0 -64px;}
+.loginMSN {background-position:0 -96px;}
+.loginDB {background-position:0 -128px;}
+.forgotTD img {vertical-align:middle;*vertical-align:top;}
+.forgotTD .regInput {float:none;/*margin-right:5px;*/margin-left:18px;}
+.btnBlue,.colorNew {color:#f60;/*background-position:-103px -208px;color:#fff;font:14px/21px 'Microsoft Yahei';height:23px;width:86px;text-align:center;*/}
+.downLoadWrapper {margin:50px 80px;line-height:4;}
+.btnDownLoad {background-position:-102px -182px;height:26px;width:96px;vertical-align:middle;}
+.applyOrg {color:#666;font:18px/2 SimHei;padding:0 30px;_position:relative;}
+.applyOrg em {color:#f29003;margin:0 10px;font-size:24px;}
+.orgInfoChose {border:1px solid #EEE;border-bottom:none;margin:20px 40px;}
+.orgInfoChose>dt,.likeDt {background-color:#eee;font-size:14px;padding-left:10px;line-height:2.2;}
+.orgInfoChose>dd {border-bottom:1px solid #eee;}
+.choseOptionList {height:245px;overflow-x:hidden;overflow-y:auto;}
+.letterClass {line-height:2;}
+.letterClass dd {padding-left:30px;}
+.letterClass dd a {color:#333;display:inline-block;margin-right:50px;padding:0 5px;margin-bottom:10px;white-space:nowrap;}
+.letterClass dd a:hover,.letterClass dd .cur {background-color:#B38412;color:#fff;text-decoration:none;}
+*html .orgInfoChose dt,.likeDt {background-color:#eee;font-size:14px;padding-left:10px;line-height:2.2;}
+*html .orgInfoChose dd {border-bottom:1px solid #eee;}
+*html .orgInfoChose .letterClass dt {background-color:#fff;}
+*html .orgInfoChose .letterClass dd {border:none;}
+.otherOrg {margin:0 40px;line-height:2;}
+.sameBank {border:1px solid #eee;background-color:#fff;padding:0 10px;position:absolute;left:230px;top:30px;width:370px;}
+.sameBank a {color:#333;margin-left:10px;font:12px 'Microsoft Yahei';}
+.red {font:12px/1.6 "\5b8b\4b53";}
+.tableLogin .red,.tableTag .red {position:absolute;margin-left:-10px;}
+.tableLogin .btnBlue,.btnPass {background:url("@{url}/i.png") -78px -1579px no-repeat;color:#fff;display:inline-block;font:12px/21px "\5b8b\4f53";height:21px;width:92px;text-align:center;}
+.tableLogin .btnBlue2 {background-position:-91px -283px;color:#333;}
+.downLoadBook {background-position:0 -359px;height:40px;width:225px;}
+
+/*****  org->gw  *****/
+.tableHeader {margin:60px 0;}
+.headerTxt {width:200px;line-height:1.6;text-align:left;position:absolute;margin:-45px 0 0 30px;*margin:-45px 0 0 0;}
+.tel {color:#000;font-size:14px;margin:25px 0 -10px;font-family:'Microsoft Yahei';float:right;_position:relative;}
+.tel span {color:#b38412;font-weight:700;font-size:16px;padding-left:10px;}
+.telNum {background-position:-171px -231px;height:20px;width:16px;margin:0 5px 0 30px;_background:url("@{url}/ie6/tel.gif") 0 2px no-repeat;_margin:0 10px 0 30px;}
+.btnSaveWrap {padding:30px 0 0 150px;}
+
+/*****  link  *****/
+.loginHead {margin:15px auto 0;}
+.loginCont {background-color:#FAFAFA;-webkit-border-radius:8px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.35);color:#666;margin:10px auto;position:relative;padding-bottom:20px;border:1px solid #f1f1f1\9;width:962px\9;overflow:hidden;}
+:root .loginCont {border:none\0;width:960px\0;}
+.loginCont:after{content: "";display:block;clear:both;position:absolute;height:4px;width:960px;background-color:#e4e4e4;bottom:0;left:0;-webkit-border-radius:8px;border-radius:8px;}
+.textCailang {padding:30px;min-height:400px;_height:400px;}
+
+.linkList li {float:left;background-color:#fff;border:1px solid #c9c9c9;border-radius:8px;box-shadow:0 0 5px rgba(0,0,0,.3);-webkit-box-shadow:0 0 5px rgba(0,0,0,.3);height:90px;margin:13px;_margin:13px 12px;width:150px;text-align:center;-webkit-transition:all .1s linear;overflow:hidden;}
+.linkList li:hover {box-shadow:0 0 15px rgba(0,0,0,.3);}
+.linkIcon {display:block;margin:10px auto 0;outline:none;}
+.linkH2,.joinH2,.joinH3 {font-size:16px;}
+.linkH2 {text-indent:1em;font-weight:700;}
+.joinH2 {color:#3989B9;}
+.joinH3 {margin:20px 0 10px;}
+.jobName dt {border-top:1px solid #aaa;background-image:-webkit-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0));background-image:-moz-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,0)); filter:     e("progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#00000000,GradientType=0)");font:700 14px/30px "\5b8b\4f53";height:40px;text-indent:1em;position:relative;}
+
+
+.jobName dt em {color:#000;font-weight:700;margin-right:25px;}
+.jtoTop {color:#999;position:absolute;right:10px;top:0;font:normal 12px/30px "\5b8b\4f53";}
+.jobName dd {margin:10px 0 30px;padding:0 10px;line-height:2;}
+
+.giveAdvice {margin:0 auto;padding:50px 0;width:700px;line-height:2;min-height:400px;_height:400px;}
+.inputAdvice {border:1px solid #c9c9c9;padding:0 6px;height:22px;line-height:22px;width:140px;}
+.textAdvice {border:1px solid #c9c9c9;height:100px;width:400px;}
+.thankAdvice {color:#999;width:416px;}
+.thankAdvice .sureThisBig {float:right;margin-right:0 !important;margin-top:10px;}
+
+.autologin {vertical-align:middle;margin-right:5px;}
+.orgUseWay {clear:both;position:absolute;right:-100px;bottom:auto;top:5px;color:#f00303;}
+
+/*****  new Header 2012/10/9  *****/
+.nav {text-align:right;clear:right;*font-family:\5fae\8f6f\96c5\9ed1;}
+.nav a {color:#303030;}
+.navUrl1,.navUrl2,.navUrl3,.navUrl4 {outline:none;background:url("@{url}/index2/navright.png") no-repeat;float:left;width:145px;text-indent:-9999em;}
+.navUrl1 {background-position:0 -30px;}
+.navUrl2 {background-position:-145px -30px;}
+.navUrl3 {background-position:-290px -30px;}
+.navUrl4 {background-position:-440px -30px;}
+.navUrl1:hover {background-position:0 -4px;}
+.navUrl2:hover {background-position:-145px -4px;}
+.navUrl3:hover {background-position:-290px -4px;}
+.navUrl4:hover {background-position:-440px -5px;}
+
+.littleH2 {color:#fd2502;font:12px 'Microsoft Yahei';margin-left:10px;}
+.inviteReg {background-color:#F7F7F7;border-bottom:1px solid #E0E4E6;padding:15px;*font-family:'Microsoft Yahei';}
+.inviteHr {background-color:#CFCFCF;margin:0;*float:left;}
+.inviteBook {color:#000;margin:0 0 0 15px;}
+.inviteBook strong {font-weight:100;margin:-5px 0 5px;display:inline-block;}
+.inviteBook h2 {font-size:16px;}
+.rightImg,.rightImg2 {width:280px;text-indent:-9999em;}
+.rightImg {height:438px;background:url("@{url}/reg/rightImg.png") no-repeat;}
+.rightImg2 {height:430px;background:url("@{url}/reg/rightImg2.png") no-repeat;}
+
+.forgotDiv {background-color:#FFFFD0;border:1px solid #B38412;display:inline-block;*display:inline;*zoom:1;padding:5px 10px;}
+.forgotDiv p {white-space:nowrap;word-wrap:normal;word-break:keep-all;overflow:hidden;}
+.forgotDiv p:nth-child(2) {display:inline-block;}
+.forgotDiv p:last-child {display:block;}
+*html .forgotDiv .noDataIcon {margin-top:5px;}
+.passReset {margin:150px 0;}
+.rightIcon {background-position:-173px -1227px;height:28px;width:28px;/*vertical-align:-5px;*/}
+em.colorReg {font-size:22px;font-family:'Microsoft Yahei';}
+.changeWid {display:inline-block;*display:inline;*zoom:1;width:120px;}
+.changeWid .changeImg {color:#834301;*font-family:'Microsoft Yahei'}
+.forgotTD .tsInfoReg {*margin-top:1px;}
+.inviteIcon {background:url("@{url}/reg/inviteicon.gif") no-repeat;height:29px;width:73px;text-indent:-9999em;display:block;}
+.tdRightCont {border:1px solid #DCDACE;background-color:#FEFCF2;padding:0 15px;}
+.serverTags {margin:10px 15px 10px 0;display:inline-block;}
+.contReg .cLeft .redIcon {position:absolute;margin-left:-10px;}
+.contReg .cLeft .tableLogin .redIcon {position:static;margin-left:0;}
+.contReg .cLeft span.redIcon {position:static;margin-left:10px;}
+.contReg .cLeft table.mt20 {width:90%;margin:20px auto;}
+
+.logoTxt {color:#f89801;font:100 22px \9ed1\4f53;}
+.userSignIn {border-bottom:1px solid #C4C4C4;height:33px;padding:7px 0 0 60px;background-image:-webkit-gradient(linear,left top,left bottom,from(#F6F6F6),to(#DBDBDB));background-image:-webkit-linear-gradient(top,#F6F6F6,#DBDBDB);background-image:-ms-linear-gradient(top,#F6F6F6,#DBDBDB);background-image:-moz-linear-gradient(top,#F6F6F6,#DBDBDB);filter: e("progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffF6F6F6,endColorStr=#ffDBDBDB)");}
+.userSignIn a {color:#666;font:12px/28px "\5fae\8f6f\96c5\9ed1";display:inline-block;*zoom:1;height:28px;text-align:center;}
+.w76 {width:76px;}
+.w154 {width:154px;}
+.userSignIn .curSign{background:url("@{url}/reg/btn_user.gif") no-repeat;color:#333;}
+.userSignIn .curSign2{background:url("@{url}/reg/btn_user2.gif") no-repeat;color:#333;}
+.realName {color:#fb7d00 !important;}
+
+.logo {margin-top:10px;}
+.regWrapper {border:none;background:url("@{url}/index2/bg_login.png") no-repeat;}
+.loginPass {font-size:18px;margin:15px 0 0 15px;}
+.noHave {border:1px solid #B0E2FA;background-color:#E0F6FF;font:16px/34px "\5fae\8f6f\96c5\9ed1";margin:15px;text-align:center;}
+.noHave .red {font:22px/34px "\9ed1\4f53";}
+.btnLoginNew {background-position:0 -68px;color:#fff;height:47px;width:142px;text-align:center;font:22px/120px SimHei;margin-top:-5px;overflow:hidden;}
+.header {padding-top:0;}
+.bLine {bottom:-10px;}
+.mb50 {margin-bottom:50px;}

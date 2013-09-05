@@ -1,0 +1,277 @@
+@import "var";
+@import "mixins";
+body {background:url(http://static.91money.com/img/index2/bg.png) repeat;font-family:'Microsoft Yahei';}
+section.cont {background-color:#fff;-webkit-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.42);box-shadow:0 1px 3px rgba(0,0,0,.42);}
+.header {position:relative;z-index:995;}
+.btnAdd,.uploadImg {display:inline-block;background:url(http://static.91money.com/img/i.png) no-repeat;}
+.h36 {height:36px;}
+.w132 {width:132px;}
+.w190 {width:190px;}
+.w80 {width:80px !important;}
+
+.sCLeft {width:665px;padding-left:25px;padding-bottom:20px;}
+.spaceHeader {padding:5px 0;width:290px;}
+.spaceHeader .imgHeader {margin-right:0;}
+.spaceHeader .imgHeader img {height:40px;width:40px;}
+.spaceUserName {color:#333;float:right;width:243px;font:12px/1.5 'Microsoft Yahei';}
+
+.spaceNav li {float:left;position:relative;height:50px;line-height:50px;margin-right:19px;}
+.spaceNav li a {color:#666;font:14px SimHei;}
+.spaceNav li a:hover {text-decoration:none;}
+.spaceNav .cur a {color:@color;}
+.spaceIcon {background:url(http://static.91money.com/img/space/snav.png) no-repeat;/*background:url(http://static.91money.com/img/i.png) no-repeat;*/display:inline-block;*zoom:1;height:30px;_height:29px;width:28px;vertical-align:middle;margin-right:8px;_margin:10px 5px 10px 0;}
+/*
+.spaceIcon0 {background-position:0 -429px;}
+.spaceIcon1 {background-position:-28px -429px;}
+.spaceIcon2 {background-position:-56px -429px;}
+.spaceIcon3 {background-position:-84px -429px;}
+.spaceIcon4 {background-position:-112px -429px;}
+.spaceIcon5 {background-position:-112px -613px;}
+.spaceIcon6 {background-position:-190px -840px;}
+.spaceIcon7 {background-position:-164px -1386px;}
+*/
+.spaceIcon0 {background-position:0 0;}
+.cur .spaceIcon0,.chooseLi .spaceIcon0 {background-position:0 -30px;}
+.spaceIcon1 {background-position:-27px 0;}
+.cur .spaceIcon1,.chooseLi .spaceIcon1 {background-position:-27px -30px;}
+.spaceIcon2 {background-position:-55px 0;}
+.cur .spaceIcon2,.chooseLi .spaceIcon2 {background-position:-55px -30px;}
+.spaceIcon3 {background-position:-82px 0;}
+.cur .spaceIcon3,.chooseLi .spaceIcon3 {background-position:-82px -30px;}
+.spaceIcon4 {background-position:-110px 0;}
+.cur .spaceIcon4,.chooseLi .spaceIcon4 {background-position:-110px -30px;}
+.spaceIcon5 {background-position:-164px 0;}
+.cur .spaceIcon5,.chooseLi .spaceIcon5 {background-position:-164px -30px;}
+.spaceIcon6 {background-position:-137px 0;}
+.cur .spaceIcon6,.chooseLi .spaceIcon6 {background-position:-137px -30px;}
+.spaceIcon7 {background-position:-192px 0;}
+.cur .spaceIcon7,.chooseLi .spaceIcon7 {background-position:-192px -30px;}
+
+.curIcon {color:#fff;display:none;position:absolute;bottom:-11px;left:50px;margin-left:-12px;line-height:1.6;}
+.spaceNav .cur .curIcon {display:block;}
+
+.spaceCont {margin-bottom:20px;}
+.spacePurList {padding-bottom:10px;margin-top:20px;border-bottom:1px dashed #C6C4C4;margin-left:-10px;}
+.spacePurList li {display:inline-block;width:212px;margin-left:9px;*display:inline;*zoom:1;*margin-left:12px;vertical-align:top;}
+.spacePurList4 {background:url(http://static.91money.com/img/space/lineli1.gif) 17px bottom no-repeat;border-bottom:none;}
+.spaceGwCont .spacePurList5 {background:url(http://static.91money.com/img/space/lineli1.gif) 5px bottom no-repeat;border-bottom:none;margin-bottom:10px;}
+.spacePurList .noInfo {border:1px solid #E1E1E1;background-color:#f9f9f9;/*height:192px;*/width:210px;color:#b3b3b3;font:16px 'Microsoft Yahei';text-align:center;}
+.spaceGwCont .spacePurList li {position:relative;}
+.spaceGwCont .btnGroup {position:absolute;bottom:50px;left:40px;}
+.spacePurList .spaceHeadInfo {margin-bottom:10px;}
+.spacePurContP {/*height:165px;overflow:hidden;*/line-height:1.7;}
+.spacePurContP a {color:#333;}
+.spacePurContP a:hover {text-decoration:underline;}
+.spaceHeaderRight {float:left;margin-top:-5px;_margin-top:-3px;width:150px;white-space:nowrap;line-height:20px;_overflow:hidden;word-wrap:normal;}
+.sUserName,.spaceHeaderRight em {display:block;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.spaceHeaderRight a {color:#834301;}
+.fansColor {color:#b38412;}
+.sUserName {}
+*html .spaceHeaderRight .sUserName {line-height:1.7;}
+.spaceHeaderRight .bk {word-wrap:break-word;word-break:break-all;white-space:normal;}
+*html .spaceHeaderRight a,*html .spaceHeaderRight p em,*html .spaceHeaderRight em {display:block;}
+*html .spaceHeaderRight em a {display:inline;}
+.sProductName {text-align:center;/*margin:15px 0 10px;*/margin-bottom:15px;}
+.sProductName a {color:@color;font:14px/1.6 'Microsoft Yahei';letter-spacing:.1em;}
+.headFans {width:52px;margin-right:10px;}
+.spacePurList4 .imgHeader {margin-right:0;}
+.spacePurList5 .headFans {width:70px;}
+.headFans em {color:#666;float:left;width:50px;margin-top:5px;}
+.spaceActiveTit {float:left;color:#000;font-size:14px;width:105px;line-height:1.4;}
+
+.rightSpace {margin:30px 20px 0 0;}
+.rightSpace2,.rSpaceIntro {border:1px solid #DDD;padding:10px;}
+.rightSpace2 {/*border-bottom-style:dashed;*/-webkit-border-radius:4px;border-radius:4px;margin:10px 20px 0 0;border:1px solid #ddd;}
+.rightSpace.rightSpace2 {margin:30px 20px 0 0;}
+.rightSpace3 {margin:30px 20px -20px 10px;}
+.rightSpace4 {margin:5px 20px 0 0 !important;}
+.rSpaceIntro {border-top:none;background-color:#FBFBFB;margin:0 20px 0 0;color:#666;}
+
+.rightSpace .imgHeader .wh116 {height:115px;width:115px;}
+.rSpaceHeader {color:#000;float:left;margin-left:5px;position:relative;height:116px;width:90px;word-wrap:normal;}
+.rSpaceHeader .addGZ {position:absolute;bottom:2px;left:0;}
+.sName,.sAddr,.sButton {display:block;}
+.sName {font-size:14px;word-wrap:break-word;line-height:1.5;margin-top:-5px;_position:relative;}
+.rSpaceHeader .sAddr {margin:3px 0 0;}
+
+.rightSpace .rightH2,.rightSpace .rightH2 a,.hisGrade .sUserName,.activeTit {color:#343384;}
+.rightSpace .rightH2 a {font-size:12px;margin-top:3px;}
+.hisGrade li {margin-top:30px;}
+.hisGrade .star {margin:5px 0;}
+.hisGrade .sUserName {font-size:12px;}
+.dianPing li {margin-bottom:30px;}
+.comment {color:#173f85;line-height:1.8;}
+.activeIntro {margin-bottom:5px;}
+.activeTit {float:left;width:160px;}
+
+/*****  gw  *****/
+.authBtn {display:inline-block;border:1px solid #CDCCC9;-webkit-border-radius:2px;border-radius:2px;color:#222 !important;height:25px;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#E3E3E3));background-image:-webkit-linear-gradient(top,#fff,#E3E3E3);background-image:-moz-linear-gradient(top,#fff,#E3E3E3);*background-color:#fcfcfc;line-height:25px;width:auto;text-align:center;position:relative;padding-left:30px;}
+.authBtn:hover {text-decoration:none;}
+.authBtn s {position:absolute;top:-4px;left:-10px;float:left;height:33px;width:33px;}
+.authBtn .authIcon {background:url(http://static.91money.com/img/space/authBtn.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="http://static.91money.com/img/authBtn.png");_background:none;}
+.authBtn .authIcon1 {background:url(http://static.91money.com/img/space/authBtn1.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="http://static.91money.com/img/space/authBtn1.png");_background:none;}
+.authBtn .authIcon2 {background:url(http://static.91money.com/img/space/authBtn2.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="http://static.91money.com/img/space/authBtn2.png");_background:none;}
+.authBtn .authIcon3 {background:url(http://static.91money.com/img/space/authBtn3.png) no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="http://static.91money.com/img/space/authBtn3.png");_background:none;}
+.authBtn em {margin:0 5px;}
+
+.buttons {margin-top:10px;position:absolute;bottom:20px;}
+.buttons .btnzi,.buttons .btnyu,.buttons .btnCang {*float:left;*margin-right:5px;}
+.colorZX {color:#fe6705;}
+.colorYY {color:#743501;}
+.colorSC {color:#494949;}
+.spaceGwName {color:#a64002;font-size:14px;margin:0 3px;}
+.spaceTags,.topicTxt {color:#ef7203;}
+.spaceTags {margin-right:5px;}
+.mySpacePublished .purTxt {width:100%;}
+.pContDl dt {margin-bottom:5px;}
+
+.spacePurList .sProductName {margin-bottom:10px;}
+
+/*****  orgGw flag  *****/
+.orgGW  li {border-bottom:1px dotted #999;padding:10px;line-height:1.8;margin-right:10px;}
+.orgGwName {color:#864904;}
+.orgsName {display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:keep-all;_width:85px;}
+.orgsName:hover {text-decoration:underline;}
+
+/*****  2012/10/10  *****/
+.sCLeft .myPurpose {background-color:#FBFBFB;}
+.sCLeft .publishedNew .myPurTxt {width:480px;}
+.sAddr {margin:0 0 3px;}
+.sROrgName {display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.8;}
+.viewDetail {color:#ea4500;}
+.spaceCont .purpose {margin:30px 0 15px 0;}
+.fname {float:left;font-weight:100;}
+i.c6 {float:left;width:110px;}
+em i.c6 {float:none;}
+.rsOrgName {display:inline-block;overflow:hidden;width:179px;}
+.w158 {width:155px;}
+.sMore {color:#666;float:right;}
+.userHeadrs {*padding:0 0 10px 5px;}
+.userHeadrs li {margin:10px 0 0 5px;}
+
+/*****  2012/12/18   *****/
+.myPublished {border-bottom:1px dashed #ccc;padding:0 0 10px 0;margin:10px 0;zoom:1;}
+.myPublished>.pCont {padding:0;}
+.published_91 {*zoom:1;}
+.published_91 .myPublished:hover {background-color:#fff;}
+.published_91 .myPurpose,.interestedList .myPurpose {background-color:#fbfbfb;}
+.published_91 .replyDate {text-align:right;}
+.published_91 .pTime {margin-top:0;text-align:right;}
+.published_91 span.pTime {text-align:left;width:150px;}
+.letterList .pTime {margin-top:20px;}
+.published_91 .myPurTxt {padding:0 10px;}
+.published_91 .upIcon,.published_91 .upIcon2,.interestedList .upIcon,.interestedList .upIcon2 {left:49%;}
+.colorPro {color:@color !important;}
+.spaceTit {width:212px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;margin-bottom:10px;}
+
+.spacePurList0 .spacePurCont {height:254px;background:url(http://static.91money.com/img/space/bg_li1.png) no-repeat;padding:16px 5px 0;position:relative;}
+.spaceGwCont .spacePurList0 .spacePurCont {height:207px;background:url(http://static.91money.com/img/space/bg_li6.png) no-repeat;padding:16px 10px 0;}
+.spacePurList2 .spacePurCont {height:163px;background:url(http://static.91money.com/img/space/bg_li2.png) no-repeat;padding:20px;}
+.spacePurListOrg .spacePurCont {padding:20px 10px 0;/*height:218px !important;*/height:180px !important;}
+.spacePurListOrg .spaceHeaderRight {/*width:132px;*/width:114px;}
+.spacePurListOrg .spacePurCont .btnGroup {bottom:22px;}
+
+.spaceGwCont .spacePurList2 .spacePurCont {height:175px;padding:15px 20px;background:url(http://static.91money.com/img/space/bg_li2.png) no-repeat;}
+.spacePurList3 .spacePurCont {height:206px;background:url(http://static.91money.com/img/space/bg_li3.png) no-repeat;padding:20px;}
+.spaceGwCont .spacePurList3 .spacePurCont {/*height:240px;background:url(http://static.91money.com/img/space/bg_li5.png) no-repeat;*/background:url(http://static.91money.com/img/space/bg_li3.png) no-repeat;height:210px;padding:13px 20px;}
+.spacePurList .noInfo {height:320px;line-height:320px;}
+.spacePurList3 .noInfo {height:362px;}
+.spaceGwCont .spacePurList0 .noInfo {height:293px;line-height:293px;}
+.spaceGwCont .spacePurList2 .noInfo {/*height:286px;line-height:286px;*/height:265px;line-height:265px;}
+.spaceGwCont .spacePurList3 .noInfo {/*height:333px;line-height:333px;*/height:290px;line-height:290px;}
+.spaceGwCont .tjPro {margin:18px 0 0 5px;border:none;padding:0;height:92px;}
+.tjPro dt {color:#000;font-size:14px;font-weight:100;display:block;margin-bottom:8px;}
+.tjPro a {color:#666;line-height:1.8;background:url(http://static.91money.com/img/i.png) -214px -132px no-repeat;padding-left:16px;}
+
+.hisAttr em {color:#834301;margin-left:10px;display:inline-block;*zoom:1;text-align:right;}
+.w15 {width:15px;}
+.w34 {width:34px;}
+.w72 {width:72px;}
+.hisAttr .w72 {text-align:left;padding-left:11px;width:61px;}
+.xqCont {padding:5px 11px 0;margin:10px 0 25px;height:120px;}
+.xqCont p {line-height:1.7;}
+.buCong {padding:0 5px;}
+.borderTop {border-top:1px dashed #C6C4C4;margin-top:7px;padding-top:7px;}
+.personalIntro {margin:10px -10px -10px;background-color:#FBFBFB;-webkit-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;border-top:1px solid #D8D8D8;padding:15px;}
+.sFangAn li {border-bottom:1px dashed #c6c4c4;margin-bottom:5px;padding-bottom:5px;}
+.spaceCont .noData {margin:30px auto;line-height:140px;height:140px;}
+.sFangAn .pCont {padding:10px 0;}
+.kMid4 .tjPro {margin-top:10px;}
+.kMid4 .pTime {margin-top:10px;}
+.noPublish {text-align:center;color:#666;}
+.kMid4 .noPublish {line-height:150px;}
+.bgHui {background-color:#F6F6F6;margin:40px -6px -14px;height:120px;line-height:100px;*zoom:1;*margin:56px -6px -12px;}
+.noPro {background-color:#F6F6F6;height:130px;margin:0 -7px -19px;}
+.onOfficeImg {margin:1px 0 1px 4px;}
+.orgInfo {background:url(http://static.91money.com/img/space/orgtop.png) no-repeat #fff;height:37px;line-height:37px;}
+.orgInfoWrap {width:840px;height:37px;margin-left:67px;_display:inline;white-space:nowrap;}
+.orgInfoTxt {min-width:840px;_width:840px;}
+.orgInfoCont,.orgInfoTxt {float:left;}
+.orgInfoCont {padding-right:50px;}
+.editLink,.delThis {color:#834301;float:right;text-decoration:underline;margin-right:10px;}
+.guangg .editLink {position:absolute;right:5px;top:15px;}
+.orgInfo .editLink {margin-right:30px;}
+
+.guangg {position:relative;height:220px;width:665px;overflow:hidden;margin:20px 0;}
+.focusImg li {display:none;}
+.focusImg li.foucsCur {display:block;}
+.numList {position:absolute;right:10px;bottom:5px;*bottom:10px;}
+.numList a {display:inline-block;*zoom:1;margin-left:10px;background:url(http://static.91money.com/img/i.png) -213px -311px no-repeat;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="http://static.91money.com/img/ie6/index_cur2.png");_background:none;height:9px;width:9px;overflow:hidden;}
+.numList .numCur {background-position:-213px -299px;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="http://static.91money.com/img/ie6/index_cur1.png");_background:none;}
+.yewu dt {font-style:italic;line-height:2;color:#000;}
+.yewu dd {margin-bottom:10px;}
+.yewu dd a {color:#666;margin-right:10px;}
+.orgPublic {margin:10px 0 10px 15px;}
+.orgPublic li {margin-bottom:10px;word-wrap:break-word;}
+.redSquare {background-color:#EB8302;height:4px;width:4px;vertical-align:middle;position:absolute;margin:7px 0 0 -10px;_font-size:0;}
+
+.overLayerAct {color:#000;font-size:12px;width:425px;}
+.overLayerTit {font:14px/28px 'Microsoft Yahei';width:100%;}
+.uploadAct,.uploadActArea {border:1px solid #999;}
+.uploadActArea {height:100px;line-height:1.6;padding:0 5px;margin-top:4px;_margin-top:0;width:365px;}
+.uploadAct {width:355px;padding:5px;margin:8px 0;}
+.w320 {width:320px;*vertical-align:middle;}
+.w332 {width:332px;margin-bottom:10px;}
+.w128 {width:128px;}
+.w345 {width:345px;margin-bottom:10px;}
+.btnBottomP {border-top:1px solid #DBDBDB;background-color:#F0F0F0;height:20px;text-align:right;padding:10px;margin:10px -10px -10px;}
+.uploadImg {height:18px;width:100px;background-position:0 -1477px;position:relative;overflow:hidden;}
+.tdBorder td {border-bottom:1px dotted #CBCBCB;padding-top:10px;}
+.btnAdd {height:28px;width:69px;background-position:0 -1496px;vertical-align:-9px;*vertical-align:0;}
+
+.uploadActArea .proOption {margin:10px 15px 0 0;padding:3px 10px;}
+.spaceGwCont .spacePurList5NoBottom {background-position:5px 0;}
+
+.published_91 .myPublished:hover,.sFangAn li:hover {background-color:#FEFBF2;}
+.myPublished:hover .kBottom,.sFangAn li:hover .kBottom {background:url(http://static.91money.com/img/cf/kbottom_2.png) no-repeat;}
+.published_91 .myPublised-detail {margin:0 !important;padding:0;}
+.published_91 .myPublised-detail:hover {background:none;}
+
+.addTime {position:absolute;left:21px;}
+.spacePurList0 .addTime {left:10px;bottom:20px;}
+.spacePurList2 .addTime {bottom:45px;}
+.spacePurList3 .addTime {bottom:33px;}
+
+.areaOrder {width:425px;}
+.pstatic {width:450px;}
+.spacePurList0 .spacePurCont p.c0 {position:relative;z-index:2;}
+.spacePurList0 .noPro {position:absolute;z-index:1;width:205px;left:11px;bottom:60px;}
+.spacePurList0 .spacePurCont .pTime {position:absolute;bottom:20px;}
+
+/*****  space Header S *****/
+.manNavDiv {background:#B38412;border-bottom:1px solid #FBFBFB;border-top:1px solid #B38412;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.2);box-shadow:0 1px 1px rgba(0,0,0,.2);height:49px;_position:relative;_z-index:1;_overflow:hidden;}
+.spaceHeader {width:160px;}
+.spaceUserName {color:#fff;width:110px;/*overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*/}
+.spaceNav li {line-height:55px;/*margin-left:9px;*/margin:-1px 0 0 0;height:56px;padding:0 7px;}
+.spaceNav .cur,.spaceNav li:hover {background:url(http://static.91money.com/img/space/bg_nhead.png) repeat-x;}
+.spaceNav li a {color:#fff;}
+.spaceNav .cur a,.spaceNav li:hover a {color:#834301;}
+/*****  space Header E *****/
+
+.noSData {width:80%;margin:100px auto;height:140px;line-height:140px;}
+.rightSpace .authBtn {margin-left:10px;}
+.spaceHeaderOrg {width:296px;}
+.spaceHeaderOrg .spaceUserName {width:252px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.qSpaceInfo {border-bottom:1px solid #fff;background-color:#FBFBFB;margin-bottom:-15px;line-height:1.8;}
+.qSpaceInfo dd {border-bottom:1px solid #D8D7D7;padding-bottom:10px;}

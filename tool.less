@@ -1,0 +1,81 @@
+@import "var";
+@import "mixins";
+
+@tbcolor: #d3d3d3;
+input[type="checkbox"] {vertical-align:middle;}
+
+#toolResult {
+	strong {font-weight:700;}
+}
+
+*html .header {width:100%;}
+.titTool {color:#000;font:700 15px/2 '\5fae\8f6f\96c5\9ed1';margin:28px 0 5px;}
+.tabWrap {border:2px solid @tbcolor;height:130px;overflow:hidden;}
+.resultWrap {
+	font-size:0;
+	.titResult {
+		background-color:#F5F5F5;
+		 span {font-size:14px;height:40px;line-height:40px;}
+	}
+	span {
+		.dib;
+		border-bottom:1px solid @tbcolor;border-left:1px solid @tbcolor;font-size:12px;height:45px;line-height:45px;margin-left:-1px;text-align:center;
+	}
+}
+.tabResultList {
+	overflow-x:hidden;overflow-y:auto;height:90px;
+	p:hover {background-color:#FDF6DF;}
+}
+.rw1 {width:84px;}
+.rw2 {width:223px;*width:222px;}
+.rw3 {width:297px;}
+
+.resultInfo {	
+	p {.dib;border-bottom:1px dashed @tbcolor;border-left:1px dashed @tbcolor;color:#f00;font-weight:700;font-size:14px;height:48px;line-height:48px;margin-bottom:-1px;margin-left:-1px;padding:0 15px;*padding:0 11px;}
+}
+.rValue {.dib;border:1px solid #ccc;background-color:#F5F5F5;color:#000;height:24px;line-height:24px;width:110px;text-align:right;padding-right:6px;margin-left:10px;margin-right:5px;_margin:18px 5px 15px 10px;vertical-align:middle;}
+
+.tabWrap2 {border:1px solid @tbcolor;*padding:10px 20px;}
+.btnZxTool {
+	&:extend(.btn);.bgp(0,-1684px);
+	color:#fff;height:27px;width:108px;font-size:13px;line-height:26px;text-align:center;
+	&:hover {text-decoration:none;}
+}
+
+.bankerList {
+	margin:10px 20px;overflow:hidden;font-size:0;*zoom:1;
+	li {
+		.dib;
+		color:#000;border:1px dashed #ccc;border-bottom:none;border-right:none;font-size:12px;margin:-1px 0 0 -1px;padding:15px 20px;width:28%;
+		&:after{content:"\200B";display:block;height:0;clear:both;}
+	}
+}
+
+.toolAreaWrap {border:1px solid @tbcolor;background-color:#F5F5F5;width:530px;padding:20px;}
+.toolArea {.shadow(inset 0 1px 4px rgba(0,0,0,.4));border:1px solid #F5F5F5;border:1px solid #E4E3E3\9;padding:10px;height:100px;width:508px;}
+@media screen and (min-width:0@ie8hack) {.toolArea {border:1px solid #f5f5f5;}}
+
+.tabWrap3 {
+	&:extend(.tabWrap4);margin-top:-2px;
+}
+.tabWrap4 {
+	height:auto;
+}
+
+.btnToolWrap {margin-bottom:-50px;}
+
+.tabTool {
+	color:#000;margin-left:-1px;
+	td {border-left:1px solid @tbcolor;padding-left:15px;}
+	.bobColor {border-bottom:1px solid @tbcolor;height:48px;}
+	.lastTd {
+		padding:0;
+		p {border-bottom:1px dashed @tbcolor;
+		color:#f00;font-weight:700;font-size:14px;height:48px;line-height:48px;margin-bottom:-1px;margin-left:-1px;padding-left:30px;}
+	}
+}
+.tdTitTool {.dib;vertical-align:middle;font-size:14px;width:16px;margin:20px 0;}
+.tabTool2 {	
+	.resultInfo p {font-weight:100;font-size:12px;color:#000;padding:0 0 0 35px;width:29%;}
+	.rValue {width:60px;}
+}
