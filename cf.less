@@ -1,11 +1,11 @@
 @import "var";
 @import "mixins";
 .cfIcon {.dib;background-image:url("@{cfurl}cficon.png");}
-.btnVer,.addFIcon,.setDomainIcon,.btnBindPhone,.btnSet,.circleIcon,.turnPrev,.turnNext,.redRight,.skewJtou,.rightIcon,.rightNext,.warningIcon,.pubIcon,.btnFaBu,.btnLiCai,.btnFindGw,.btnGoOn,.tabCard,.fbTsInfo s,.delGW,.btnQR2,.btnHuiFu,.btnDY,.btnSC,.btnPass,.btnSave2,.dyH3,.tsInfoIcon,.btnSave,.btnSend,.btnPub,.delThis,.replyed,.purTag,.btnPro,.dsjIcon,.noReplyed,.btnView,.serIcon,.btnAddGW,.wonderIcon,.toolType dt,.viewAdd s {&:extend(.btnIcon);}
+.btnVer,.addFIcon,.setDomainIcon,.btnBindPhone,.btnSet,.circleIcon,.turnPrev,.turnNext,.redRight,.skewJtou,.rightIcon,.rightNext,.warningIcon,.pubIcon,.btnFaBu,.btnLiCai,.btnFindGw,.btnGoOn,.tabCard,.fbTsInfo s,.delGW,.btnQR2,.btnHuiFu,.btnDY,.btnSC,.btnPass,.dyH3,.tsInfoIcon,.btnSave,.btnSend,.btnPub,.delThis,.replyed,.purTag,.btnPro,.dsjIcon,.noReplyed,.btnView,.serIcon,.btnAddGW,.wonderIcon,.toolType dt,.viewAdd s {&:extend(.btnIcon);}
 .inviteIcon,.btnInvite {display:inline-block;background:url("@{url}/cf/invite.png") no-repeat;}
 .lockIcon,.changeHeader {background:url("@{url}/nav.png") no-repeat;}
 
-.btnVer:hover,.btnPub:hover,.launch a:hover,.searchClass a:hover,.searchSubmit:hover,.btnBindPhone:hover,.publishWrapper a:hover,.btnInvite:hover,.btnGoOn:hover,.fwq a,.btn2:hover,.btnSave:hover,.btnSave2:hover,.btnPass:hover,.btnHuiFu:hover,.rightBg:hover,.tabCard a:hover,.tabTitle a:hover,.btnLiCai:hover {text-decoration:none;}
+.btnVer:hover,.btnPub:hover,.launch a:hover,.searchClass a:hover,.searchSubmit:hover,.btnBindPhone:hover,.publishWrapper a:hover,.btnInvite:hover,.btnGoOn:hover,.fwq a,.btn2:hover,.btnSave:hover,.btnPass:hover,.btnHuiFu:hover,.rightBg:hover,.tabCard a:hover,.tabTitle a:hover,.btnLiCai:hover {text-decoration:none;}
 .btnPass {color:#fff;background-position:-78px -1579px;width:91px;height:21px;text-align:center;font:12px/21px 'Microsoft Yahei';}
 .noBBorder {border-bottom:none !important;}
 .bBorder {border-bottom:1px dashed #C6C4C4;}
@@ -267,7 +267,7 @@
 
 /*****  cang  *****/
 .tableCang th {padding-left:10px;}
-.tableCang td {border-bottom:1px dashed #ccc;}
+.tableCang td {border-bottom:1px dashed #ccc;padding-top:10px;}
 .tableCang .btnG6,.tableCang .btnG6-1 {float:right;}
 .orgTypes .fixedLi {color:#010066;cursor:default;font-weight:700;}
 .cangAll {border-left:1px solid #E6E6E6;border-right:1px solid #E6E6E6;}
@@ -348,24 +348,24 @@
 .gwList li ul {max-height:530px;_height:530px;overflow-x:hidden;overflow-y:auto;}
 
 /*****  product detail  *****/
-.detail {border:1px solid #D9D9D9;background-color:#F7F7F7;}
+.detail {border:1px solid #D9D9D9;}
 .detailWrap {border:2px solid #F7F7F7;}
-.detail .myInfo {margin:10px 0 10px 10px;width:20%;_display:inline;}
-.detailInfo {background-color:#fff;border-left:1px dashed #ccc;width:69%;padding:10px 4% 20px;position:relative;min-height:185px;_height:185px;z-index:1;}
+.detail .myInfo {margin:10px 0 0 10px;width:20%;_display:inline;}
+.detailInfo {background-color:#fff;border-left:1px dashed #ccc;width:69%;padding:10px 4% 10px;/*position:relative;min-height:185px;_height:185px;z-index:1;*/}
 .detailInfo .productDetail {color:#000;line-height:2;}
 .detailInfo .oOperate,.noOperate {margin-left:0;padding:5px 10px 7px;zoom:1;}
 *+html .detailInfo .oOperate,.noOperate {padding:5px 10px;}
 .noOperate {background-color:#ccc;color:#946D25;}
-.cangBtn {position:absolute;right:20px;bottom:10px;}
 .detailHr {height:0;border-top:1px dashed #ccc;background-color:#fff;margin:15px 0 20px;}
 .introduce {background-color:#F9F9F9;padding:30px;word-wrap:break-word;word-break:break-all;line-height:1.8;overflow:hidden;}
 .introduce p,.introRisk dt {color:#835703;}
 .introRisk dt,.introRisk dd {float:left;line-height:2;margin-top:10px;}
 .introRisk dt {width:15%;}
 .introRisk dd {width:84%;}
+/*
 .detail .job,.detail .jobName {float:left;}
 .detail .jobName {width:100px;}
-
+*/
 .underInput {border:1px solid #999;height:28px;line-height:28px;padding:0 5px;width:210px;float:left;}
 .btnAddGW {background-position:-130px -400px;color:#fff;font:14px/21px 'Microsoft Yahei';height:23px;width:75px;text-align:center;}
 .tableGW2 {margin-left:20px;width:485px;}
@@ -535,10 +535,10 @@
 .sIndex {border:1px solid #E9E9E9;border-top:3px solid #cacaca;*zoom:1;}
 .sIndexLi {margin:0 20px 20px;}
 .sIndexLi li {border-bottom:1px dashed #c4c4c4;zoom:1;padding-bottom:15px;margin-top:20px;}
-.sIndexLi li:last-child {border-bottom:none;padding-bottom:0;}
+.sIndexLi>li:last-child {border-bottom:none;padding-bottom:0;}
 .sIndexLi .noBorder {padding-bottom:0;}
 .sIndexLi .myPurTxt {padding:0 10px;}
-.sIndexLi .pTime {margin:10px 0 0 20px;}
+.sIndexLi .pTime {/*margin:10px 0 0 20px;*/margin:7px 0 10px;}
 .sIndexLi .personCont {padding:15px 20px;}
 .sPCont p {margin-bottom:5px;}
 .sIndex .noData {line-height:100px;height:100px;text-align:center;background-color:#FBFBFB;border:none;margin:0;width:auto;}
@@ -593,7 +593,7 @@
 .sProList li:nth-child(2n) {padding:0 0 5px 0;}
 .sProList .li2n {padding:0 0 5px 0;}
 .sProList .noBorder {margin-bottom:0;}
-.sProList li,.sProList .myPurTxt {height:150px;overflow:hidden;}
+.sProList li,.sProList .myPurTxt {height:160px;overflow:hidden;}
 .sProList .myPurTxt {padding:0;width:234px;}
 .sProList .sPCont p {margin-bottom:2px;}
 .sProList .productDetail dt {border-bottom:1px solid #c6c4c4;}
@@ -655,7 +655,6 @@
 .sIcon9 {background-position:0 -345px;}
 .sIcon10 {background-position:0 -388px;}
 .sIcon11 {background-position:0 -431px;}
-.btnSave2 {/*background-position:-67px -1228px;color:#fff;font:14px/28px 'Microsoft Yahei';height:29px;width:104px;text-align:center;*/height:38px;width:128px;background-position:right -1127px;font:14px/38px 'Microsoft Yahei';text-align:center;color:#fff;}
 .published_91 {border:1px solid #E6E6E6;margin-top:15px;*zoom:1;*overflow:hidden;}
 .published_91 .myPublished {/*padding:0 0 10px 0;margin:10px;*margin:10px auto;*/padding:0 10px 10px;}
 /**+html .published_91 .myPublished {padding:10px 0;}*/
@@ -665,14 +664,14 @@
 .interestedList .myPurpose li {padding:10px 0;}
 .published_91 .purTxt {width:81%;}
 .published_91 .replyDate {width:19%;}
-/*.published_91 .pTime,*/.tabMyCont .pTime,.topBorderCont2 .pTime {margin-top:0;}
+/*.published_91 .pTime,*/.topBorderCont2 .pTime {margin-top:0;}
 .letterList .pTime {margin-top:20px;}
 .published_91 .myPurTxt {padding:0 10px;}
 .published_91 .upIcon,.published_91 .upIcon2,.interestedList .upIcon,.interestedList .upIcon2 {left:49%;}
 
 .tabMyCont,.yyMyCont {border:1px solid #E6E6E6;overflow:hidden;}
 .tabMyCont3 {border-top:1px solid #E6E6E6;}
-.tabMyCont .gwListHeader {margin:10px 15px 0;}
+/*.tabMyCont .gwListHeader {margin:10px 15px 0;}*/
 .myGwList {border:none;}
 .myGwList li {border-bottom:none;padding-bottom:0;padding-top:1px;}
 .myGwList .myPurTxt {padding:0;width:auto;}
@@ -683,18 +682,18 @@
 .myGwList .hisNewPro {padding-top:1px;margin-bottom:-10px;}
 .myGwList .hisGW dt {margin:15px 0;}
 .myGwList .indexOrgInfo,.myFansList .indexFansInfo {border-top:1px solid #E6E6E6;}
-.tabMyCont .cangAllList.myGwList li{border-bottom:1px dashed #e6e6e6;padding-bottom:10px;}
+.tabMyCont .cangAllList.myGwList li{border-bottom:1px dashed #e6e6e6;/*padding-bottom:10px;*/margin:0 10px;}
 
 .wantBuy {height:40px;background:url(http://static.91money.com/img/cf/bg_gwlist.png) repeat-x #fff;padding-left:20px;border-left:1px solid #CECECE;border-right:1px solid #CECECE;border-top:2px solid #c6c4c4;}
 .wantBuy li {float:left;}
 .sLiUrl2,.sLiUrl2 em {display:block;line-height:40px;}
 *html .sLiUrl2 em {height:40px;width:120px;text-align:center;}
 .wantBuyNew .sLiUrl2 em {*height:40px;*width:80px;*text-align:center;}
-.sLiUrl2 {padding-left:12px;color:#333;font:15px/20px 'Microsoft Yahei';}
+.sLiUrl2 {padding-left:15px;color:#333;font:15px/20px 'Microsoft Yahei';}
 .sLiUrl2:hover {text-decoration:none;}
 .curTab .sLiUrl2,.curTab .sLiUrl2 em {background-image:url(http://static.91money.com/img/index2/bg_s_li.png); background-position:0 0;}
 .curTab+li .sLiUrl2 {background:none;}
-.sLiUrl2 em {color:#000;padding-right:11px;}
+.sLiUrl2 em {color:#000;padding-right:14px;}
 .curTab .sLiUrl2 em {background-position:right 0;}
 .sLiUrl2 .newIcon {top:-5px;right:-5px;position:relative;*margin:6px 0;}
 .wantBuyNew .sLiUrl2 .newIcon {*margin-top:12px;}
@@ -752,7 +751,7 @@
 .square {height:4px;width:4px;background-color:#D9D9D9;float:left;vertical-align:middle;margin:8px 5px;_margin:10px 5px;overflow:hidden;}
 
 .fbInfo {margin:0 1px;background-color:#EBEBEB;padding:0 10px;*zoom:1;}
-.fbH3 {background:url(http://static.91money.com/img/cf/want.png) no-repeat;height:30px;font:18px/30px 'Microsoft Yahei';text-indent:75px;margin:3px 0 8px;}
+.fbH3 {background:url("@{cfurl}want.png") no-repeat;height:30px;font:18px/30px 'Microsoft Yahei';text-indent:75px;margin:3px 0 8px;}
 .bigClass {/*background:url(http://static.91money.com/img/cf/topbanner.png) 0 bottom no-repeat;*/margin-bottom:-2px;}
 .bigClass li {background:url(http://static.91money.com/img/cf/bg_tab2.png) right bottom no-repeat;color:#fff;cursor:pointer;float:left;height:41px;font:14px/44px 'Microsoft Yahei';_line-height:41px;width:127px;text-align:center;}
 .bigClass .curClass {color:#000;background-position:left bottom;_z-index:1;_position:relative;}
@@ -888,7 +887,10 @@ p.tsBorder .proOption,dl.tsBorder .proOption {margin:10px 15px 10px 0;}
 .cRight2 .wantBuy {margin:20px 20px 0;}
 .imgHeader {margin-top:3px;}
 .newPurpose .imgHeader {margin-left:1px;}
-.bgGray li {background-color:#f7f7f7;padding-bottom:0 !important;border-bottom:none !important;}
+.bgGray li {
+	background-color:#f7f7f7;padding-bottom:0 !important;border-bottom:none !important;margin:0 !important;font-size:0;
+	& *  {font-size:12px;}
+}
 .myPurTxt .noData {height:195px;line-height:195px;text-align:center;color:#666;margin-top:0;}
 
 .fwq dt {margin-bottom:2px;}
@@ -1162,8 +1164,22 @@ p.tsBorder .proOption,dl.tsBorder .proOption {margin:10px 15px 10px 0;}
 .lyLReason {width:13%;}
 .lyRReason {width:87%;}
 
-/*****  letter S  *****/
+/*****  nav letter S  *****/
 .letterNum2,.letterNum2 i {.dib;height:18px;background:url("@{cfurl}letter.png") no-repeat;_background:url("@{url}/ie6/letter.png") no-repeat;}
 .letterNum2 {background-position:0 0;padding-left:4px;margin-left:5px;position:relative;top:3px;*vertical-align:middle;*top:0;*margin:8px 0;}
 .letterNum2 i {color:#fff;background-position:right 0;padding-right:6px;height:15px;overflow:hidden;margin-right:-2px;font:11px/15px arial;_position:relative;}
-/*****  letter E  *****/
+/*****  nav letter E  *****/
+.mt50mb40 {margin-top:50px !important;margin-bottom:40px !important;}
+.cangRightCont {width:75%;float:right;}
+
+/*****  wangdian S  *****/
+.leftDitu {height:625px;height:635px\9;*height:637px;}
+.wDianWrap {margin:0 5px;overflow:hidden;}
+.wDianList {
+	li {border-bottom:1px dashed #DCDCDC;padding-bottom:10px;margin-top:10px;}
+}
+.wDianNumWrap {.dib;width:30px;overflow:hidden;}
+.wDianNum {.dib;.radius(2px);background-color:#B38412;color:#fff;font-weight:700;margin-right:10px;height:18px;padding:0 6px;line-height:18px;white-space:nowrap;}
+.wDianInfo {.dib;margin-top:-4px;line-height:1.8;}
+.wDianName {color:@color2;font-size:14px;font-weight:700;}
+/*****  wangdian E  *****/

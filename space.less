@@ -1,13 +1,14 @@
 @import "var";
 @import "mixins";
 body {background:url(http://static.91money.com/img/index2/bg.png) repeat;font-family:'Microsoft Yahei';}
-section.cont {background-color:#fff;-webkit-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.42);box-shadow:0 1px 3px rgba(0,0,0,.42);}
+section.cont {background-color:#fff;-webkit-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.42);box-shadow:0 1px 3px rgba(0,0,0,.42);padding-bottom:10px;}
 .header {position:relative;z-index:995;}
 .btnAdd,.uploadImg {display:inline-block;background:url(http://static.91money.com/img/i.png) no-repeat;}
 .h36 {height:36px;}
 .w132 {width:132px;}
 .w190 {width:190px;}
 .w80 {width:80px !important;}
+.ml-30 {margin-left:-30px;}
 
 .sCLeft {width:665px;padding-left:25px;padding-bottom:20px;}
 .spaceHeader {padding:5px 0;width:290px;}
@@ -46,6 +47,8 @@ section.cont {background-color:#fff;-webkit-border-radius:4px;border-radius:4px;
 .cur .spaceIcon6,.chooseLi .spaceIcon6 {background-position:-137px -30px;}
 .spaceIcon7 {background-position:-192px 0;}
 .cur .spaceIcon7,.chooseLi .spaceIcon7 {background-position:-192px -30px;}
+.spaceIcon8 {background-position:-221px 0;}
+.cur .spaceIcon8,.chooseLi .spaceIcon8 {background-position:-221px -30px;}
 
 .curIcon {color:#fff;display:none;position:absolute;bottom:-11px;left:50px;margin-left:-12px;line-height:1.6;}
 .spaceNav .cur .curIcon {display:block;}
@@ -80,20 +83,21 @@ section.cont {background-color:#fff;-webkit-border-radius:4px;border-radius:4px;
 .spaceActiveTit {float:left;color:#000;font-size:14px;width:105px;line-height:1.4;}
 
 .rightSpace {margin:30px 20px 0 0;}
-.rightSpace2,.rSpaceIntro {border:1px solid #DDD;padding:10px;}
-.rightSpace2 {/*border-bottom-style:dashed;*/-webkit-border-radius:4px;border-radius:4px;margin:10px 20px 0 0;border:1px solid #ddd;}
+.rightSpace2 {border:1px solid #DDD;padding:10px;.radius(4px);margin:10px 20px 0 0;}
 .rightSpace.rightSpace2 {margin:30px 20px 0 0;}
 .rightSpace3 {margin:30px 20px -20px 10px;}
 .rightSpace4 {margin:5px 20px 0 0 !important;}
-.rSpaceIntro {border-top:none;background-color:#FBFBFB;margin:0 20px 0 0;color:#666;}
+/*.rSpaceIntro {border:1px solid #DDD;padding:10px;border-top:none;background-color:#FBFBFB;margin:0 20px 0 0;color:#666;}*/
 
 .rightSpace .imgHeader .wh116 {height:115px;width:115px;}
-.rSpaceHeader {color:#000;float:left;margin-left:5px;position:relative;height:116px;width:90px;word-wrap:normal;}
+.rSpaceHeader {color:#000;float:left;position:relative;height:116px;width:95px;word-wrap:normal;}
 .rSpaceHeader .addGZ {position:absolute;bottom:2px;left:0;}
 .sName,.sAddr,.sButton {display:block;}
 .sName {font-size:14px;word-wrap:break-word;line-height:1.5;margin-top:-5px;_position:relative;}
-.rSpaceHeader .sAddr {margin:3px 0 0;}
-
+.sAddr {
+	.rSpaceHeader & {margin:5px 0;}
+	.rSpaceOrgHeader & {margin:10px 0;}
+}
 .rightSpace .rightH2,.rightSpace .rightH2 a,.hisGrade .sUserName,.activeTit {color:#343384;}
 .rightSpace .rightH2 a {font-size:12px;margin-top:3px;}
 .hisGrade li {margin-top:30px;}
@@ -143,11 +147,14 @@ section.cont {background-color:#fff;-webkit-border-radius:4px;border-radius:4px;
 .fname {float:left;font-weight:100;}
 i.c6 {float:left;width:110px;}
 em i.c6 {float:none;}
-.rsOrgName {display:inline-block;overflow:hidden;width:179px;}
+.rsOrgName {
+	display:inline-block;overflow:hidden;width:179px;
+	.borderTop & {width:auto;}
+}
 .w158 {width:155px;}
 .sMore {color:#666;float:right;}
-.userHeadrs {*padding:0 0 10px 5px;}
-.userHeadrs li {margin:10px 0 0 5px;}
+.userHeadrs {padding-bottom:10px;*padding:0 0 10px 5px;margin-left:1px;font-size:0;}
+.userHeadrs li {margin:10px 0 0 7px;}
 
 /*****  2012/12/18   *****/
 .myPublished {border-bottom:1px dashed #ccc;padding:0 0 10px 0;margin:10px 0;zoom:1;}
@@ -192,7 +199,10 @@ em i.c6 {float:none;}
 .xqCont p {line-height:1.7;}
 .buCong {padding:0 5px;}
 .borderTop {border-top:1px dashed #C6C4C4;margin-top:7px;padding-top:7px;}
-.personalIntro {margin:10px -10px -10px;background-color:#FBFBFB;-webkit-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;border-top:1px solid #D8D8D8;padding:15px;}
+.personalIntro {
+	margin:10px -10px -10px;background-color:#FBFBFB;.radius(0 0 4px 4px);border-top:1px solid #D8D8D8;padding:15px;line-height:1.8;
+	em.db {font-weight:700;font-size:13px;margin-bottom:5px;}
+}
 .sFangAn li {border-bottom:1px dashed #c6c4c4;margin-bottom:5px;padding-bottom:5px;}
 .spaceCont .noData {margin:30px auto;line-height:140px;height:140px;}
 .sFangAn .pCont {padding:10px 0;}
@@ -275,3 +285,71 @@ em i.c6 {float:none;}
 
 .qSpaceInfo {border-bottom:1px solid #fff;background-color:#FBFBFB;margin-bottom:-15px;line-height:1.8;}
 .qSpaceInfo dd {border-bottom:1px solid #D8D7D7;padding-bottom:10px;}
+.spaceSelect {font-size:12px;font-family:"\5b8b\4f53";
+	select {min-width:110px;_width:110px;}
+}
+.underList {
+	background:url("@{surl}bgtab.png") no-repeat;margin-top:1px;font-size:12px;font-family:"\5b8b\4f53";
+	th{height:30px;font-weight:100;}
+	td {border-bottom:1px dashed #C5C3C3;height:36px;padding-left:10px;}
+}
+.sColor {
+	color:@sColor;
+	&:hover {color:@sColor2;}
+}
+.sAttention {.dib;}
+.thisPro {
+	p {.dib;width:45%;}
+}
+.noUnderList {color:#999;height:300px;line-height:300px;}
+.newSicon {background:url("@{url}/sicon.png") no-repeat;vertical-align:middle;}
+.noUnderIcon {
+	&:extend(.newSicon);.bgp(0,-522px);.dib;height:42px;width:42px;_margin:150px 0;
+}
+.sTsInfo {background-color:#FFF5CC;border:1px solid #F2DD8C;padding:8px 10px;position:relative;}
+.closeSInfo {position:absolute;right:5px;top:5px;&:extend(.newSicon);.bgp(0,-567px);height:12px;width:12px;}
+
+/*****  space publish S 以后空间页去掉就删除 *****/
+.fbInfo {margin:0 1px;background-color:#EBEBEB;padding:0 10px;*zoom:1;}
+.kTop3-1,.kBottom3 {width:665px;}
+.kTop3-1 {background:url("@{cfurl}ktop3-2.png") no-repeat;height:6px;}
+.kBottom3 {background:url("@{cfurl}kbottom3-2.png") no-repeat;height:17px;}
+.bigClass {/*background:url(http://static.91money.com/img/cf/topbanner.png) 0 bottom no-repeat;*/margin-bottom:-2px;}
+.bigClass li {background:url(http://static.91money.com/img/cf/bg_tab2.png) right bottom no-repeat;color:#fff;cursor:pointer;float:left;height:41px;font:14px/44px 'Microsoft Yahei';_line-height:41px;width:127px;text-align:center;}
+.bigClass .curClass {color:#000;background-position:left bottom;_z-index:1;_position:relative;}
+.fbZXWrap {
+	line-height:32px;
+	.optionWrapper {margin-right:10px;}
+}
+.areaZxWrap {background-color:#fff;border:1px solid #ccc;.radius(5px);}
+.areaZx {margin:10px;width:96.5%;height:140px;border:none;font-size:12px;}
+.btnSave2 {font-size:16px;}
+.dongTaiList {
+	
+	li {
+		border-bottom:1px dashed #C6C4C4;line-height:36px;*zoom:1;
+		&:after{content:"\200B";display:block;height:0;clear:both;}
+	}
+}
+.dongTaiTxt {width:84%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.zxDateInputWrap {.dib;vertical-align:middle;margin-right:10px;margin-top:3px;}
+.zxDateInput {border:1px solid #CBCBCB;width:120px;height:24px;line-height:24px;padding-left:5px;}
+/*****  space publish S  *****/
+
+.rSPerInfo {border:1px solid #ddd;padding:1px;.radius(4px);}
+.rSPerInfoInner {
+	border:2px solid #F3F3F3;background-color:#fff;.radius(4px);padding:6px;
+	.rSpaceHeader {height:auto;}
+}
+.spaceHeadImg {
+	background:url("@{surl}rhead.png") right top no-repeat;border:1px solid #ddd;padding:1px;.radius(4px);
+	.personalIntro {margin:0 -1px;}
+	.qi {position:static;margin-left:3px;}
+}
+.w160 {width:156px;overflow:hidden;display:inline-block;vertical-align:top;}
+.sWant {height:120px;width:668px;margin-top:15px;}
+.sWant1 {background:url("@{surl}nodata1.jpg") no-repeat;}
+.sWant2 {background:url("@{surl}nodata2.jpg") no-repeat;}
+.sWant3 {background:url("@{surl}nodata3.jpg") no-repeat;}
+.sWant4 {background:url("@{surl}nodata4.jpg") no-repeat;}
+.btnSWant {background-image:url(about:blank);height:38px;width:110px;float:right;margin:36px 25px 0 0;overflow:hidden;line-height:144px;}

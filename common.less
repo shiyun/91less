@@ -22,7 +22,7 @@ section.cont{min-height:620px;_height:620px;}
 
 .cLeft_app {float:left;width:100%}
 
-.header {/*background-color:#F5F5F5;height:78px;*/padding-top:10px;position:relative;z-index:1;}
+.header {/*background-color:#F5F5F5;height:78px;*/padding-top:10px;position:relative;z-index:1;*zoom:1;}
 .bgLine {background:url("http://static.91money.com/img/lineheader.png");position:absolute;height:2px;width:225px;left:-10px;top:80px;font-size:0;}
 .bLine {display:block;height:0;position:absolute;bottom:0;left:0;width:100%;_bottom:-1px;/*border-top:1px solid #FCFCFC;border-bottom:1px solid #D9D9D9;*/border-top:4px solid #B38412;line-height:0;}
 /*.logo {float:left;margin-top:8px;clear:left;}*/
@@ -78,7 +78,9 @@ section.cont{min-height:620px;_height:620px;}
 .footer a {color:#666;}
 
 /*****  btn flag  *****/
-.hotIcon,.aStatus,.navSIcon,.yyTime,.btnFS2,.addOrDel,.btnSure,.btnNot,.onIcon,.offIcon,.sinaIcon,.qqIcon,.tqqIcon,.rrIcon,.dbIcon,.newIcon,.newIcon3,.noDataIcon,.xhgz,.headDown,.btnAddGw,.dIcon,.btnCloseAct,.noticeIcon,.setting,.exitMy,.tablePro .btn,.btn2,.addGw,.addGwGreen,.addGZ,.cancelGZ,.btnClose,.productName .cur,.qi,.tsInfoReg3,.btnOrder,.faceIcon,.btnNext,.btnPJ,.btnCN,.btn3,.rBtn,.viewDetail,.btnUpload,.btnCancel,.btnCancel2,.btnUpload em,.btnCancel em,.btnQR,.btnFS,.btnCang {display:inline-block;background:url("http://static.91money.com/img/i.png") no-repeat;}
+.hotIcon,.aStatus,.navSIcon,.yyTime,.btnFS2,.addOrDel,.btnSure,.btnNot,.onIcon,.offIcon,.sinaIcon,.qqIcon,.tqqIcon,.rrIcon,.dbIcon,.newIcon,.newIcon3,.noDataIcon,.xhgz,.headDown,.btnAddGw,.dIcon,.btnCloseAct,.noticeIcon,.setting,.exitMy,.tablePro .btn,.btn2,.addGw,.addGwGreen,.addGZ,.cancelGZ,.btnClose,.productName .cur,.qi,.tsInfoReg3,.btnOrder,.faceIcon,.btnNext,.btnPJ,.btnCN,.btn3,.rBtn,.viewDetail,.btnUpload,.btnCancel,.btnCancel2,.btnUpload em,.btnCancel em,.btnQR,.btnFS,.btnCang,.btnSave2 {display:inline-block;background:url("http://static.91money.com/img/i.png") no-repeat;}
+.secondNav a:hover,.btnQR:hover,.btnFS:hover,.btnPJ:hover,.btnCN:hover,.btnCancel2:hover,.btnCancel:hover,.btnUpload:hover,.btnOrder:hover,.settingTit dt a:hover,.btnFS2:hover,.mobileMoney:hover,.myNav:hover,.accountInfo a:hover,.btnSave2:hover {text-decoration:none;}
+
 .tagObj {background:url("http://static.91money.com/img/nav.png") no-repeat;display:inline-block;*zoom:1;}
 .btnSure,.btnNot {background-position:-131px -940px;height:21px;width:65px;}
 .btnNot {.bgp(-131px,-961px);}
@@ -110,7 +112,6 @@ section.cont{min-height:620px;_height:620px;}
 .dIcon {background-position:right -1166px;height:20px;width:71px;color:#dd5a03;line-height:20px;text-indent:6px;margin-top:5px;text-align:center;}
 .btnAddGw {background-position:-36px -1171px;height:29px;width:78px;}
 .btnFS2 {background-position:-162px -1324px;color:#fff;line-height:27px;text-align:center;height:28px;width:65px;}
-.secondNav a:hover,.btnQR:hover,.btnFS:hover,.btnPJ:hover,.btnCN:hover,.btnCancel2:hover,.btnCancel:hover,.btnUpload:hover,.btnOrder:hover,.settingTit dt a:hover,.btnFS2:hover,.mobileMoney:hover,.myNav:hover,.accountInfo a:hover {text-decoration:none;}
 /*.curNav,.curNav em,.secondNav a:hover,.secondNav a:hover em {background:url("http://static.91money.com/img/newicons.png") no-repeat;display:inline-block;}*/
 .newIcon {background-position:-165px -1353px;height:9px;width:22px;position:absolute;right:12px;top:3px;}
 .newIcon2 {right:0;top:1px;}
@@ -189,7 +190,7 @@ section.cont{min-height:620px;_height:620px;}
 
 /*****  productDetail  *****/
 .productDetail {clear:both;}
-.productDetail dt {color:#946d25;font:12px/2 "\5b8b\4f53";margin-bottom:5px;}
+.productDetail dt {color:#946d25;font-size:12px;line-height:2;margin-bottom:8px;}
 .detailInfo .productDetail dt {color:#966925;font:17px/1.2 'Microsoft Yahei';}
 .productDetail dd {color:#000;font:12px/1.8 'Microsoft Yahei';float:left;width:50%;*width:49%;word-wrap:break-word;word-break:break-all;}
 .productDetail dd em,.productDetail dd a {color:#555;}
@@ -283,7 +284,7 @@ ul.projectList .noData {background-position:-115px -1168px;border:1px solid #E9E
 .myPurpose li {float:left;zoom:1;padding:10px 0;width:100%;margin-top:10px;margin-bottom:-1px;background:url("http://static.91money.com/img/space/lineli2.gif") -30px bottom no-repeat;/*margin-bottom:-1px;background:url("http://static.91money.com/img/line_li.gif") 141px 0 repeat-y;*/}
 .myPurpose .lastLi {background-position:-30px 0;}
 .myPurpose li:last-child {background-position:-30px 0;}
-.myPurpose li:after {content:'';display:block;clear:both;overflow:hidden;height:0;visibility:hidden;}
+.myPurpose li:after{content:"\200B";display:block;height:0;clear:both;} 
 .myInfo,.myInfop {width:140px;}
 .myInfop {border:none;}
 .myInfo .myName {width:77px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;_width:72px;}
@@ -436,8 +437,11 @@ ul.projectList .noData {background-position:-115px -1168px;border:1px solid #E9E
 .btnG7:hover {background-position:-520px -31px;}
 .btnG8 {background-position:-576px 0;width:56px;}
 */
-.btnG1,.btnG2,.btnG3,.btnG3-1,.btnG4,.btnG4-1,.btnG5,.btnG5-1,.btnG6,.btnG6-1,.btnG7,.btnG8 {float:left;background:url("http://static.91money.com/img/btng.png") no-repeat;height:44px;width:45px;}
-.btnG1 {width:45px;}
+.btnG1,.btnG2,.btnG3,.btnG3-1,.btnG4,.btnG4-1,.btnG5,.btnG5-1,.btnG6,.btnG6-1,.btnG7,.btnG8,.btnG9,.btnG10,.btnG11,.btnG9-1,.btnG10-1,.btnG11-1,.btnG12,.btnG13,.btnG14,.btnG14-1 {float:left;background:url("@{url}/btng.png") no-repeat;height:44px;width:45px;}
+.btnG1 {
+	width:45px;
+	.tjgwList & {width:43px;}
+}
 .btnG1:hover {background-position:0 -45px;}
 .btnG2 {background-position:-45px 0;width:40px;}
 .btnG2:hover {background-position:-45px -45px;}
@@ -461,6 +465,19 @@ ul.projectList .noData {background-position:-115px -1168px;border:1px solid #E9E
 .btnG7 {background-position:-533px 0;width:44px;}
 .btnG7:hover {background-position:-533px -45px;}
 .btnG8 {background-position:-577px 0;width:44px;}
+.btnG9,.btnG10,.btnG11,.btnG9-1,.btnG10-1,.btnG11-1,.btnG14,.btnG14-1 {height:32px;width:99px;}
+.btnG9 {.bgp(-700px,0);}
+.btnG9-1 {.bgp(-700px,-45px);}
+.btnG10 {.bgp(-799px,0);}
+.btnG10-1 {.bgp(-799px,-45px);}
+.btnG11 {.bgp(-898px,0);}
+.btnG11-1 {.bgp(-898px,-45px);}
+.btnG14 {.bgp(-1113px,0);}
+.btnG14-1 {.bgp(-1113px,-45px);}
+.btnG12 {.bgp(-997px,0);color:#000;height:43px;width:72px;text-align:center;font:12px/40px "\5b8b\4f53";&:hover{text-decoration:none;}}
+.btnG13 {.bgp(-1069px,0);width:43px;}
+
+.btnG9,.btnG9-1 {overflow:hidden;line-height:96px;}
 /*****  btnGroup E  *****/
 
 /*****  userInfo  *****/
@@ -561,7 +578,7 @@ a.pRight {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:no
 
 /*****  optionsList S *****/
 .optionWrapper,.rightOption {background:url("http://static.91money.com/img/cf/bg_input.png") no-repeat;height:33px;_display:inline;_zoom:1;}
-.optionWrapper {background-position:right 0;padding-right:35px;margin-right:14px;z-index:1;position:relative;cursor:pointer;}
+.optionWrapper {.dib;vertical-align:middle;background-position:right 0;padding-right:35px;margin-right:14px;z-index:1;position:relative;cursor:pointer;}
 .optionWrapperError {background-position:right -33px;}
 .optionWrapperError .rightOption {background-position:0 -33px;}
 .optionWrapper:hover {z-index:2;}
@@ -570,7 +587,7 @@ a.pRight {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:no
 .optionWrapper:hover .optionsList {visibility:visible;}
 .optionsList a {color:#333;line-height:2.2;padding:0 15px;display:block;white-space:nowrap;}
 .optionsList a:hover,.optionsList .oSelected {background-color:#FCEED2;text-decoration:none;}
-.rightOption {padding-left:15px;line-height:30px;overflow:hidden;white-space:nowrap;word-break:keep-all;word-wrap:normal;}
+.rightOption {padding-left:15px;margin-left:-1px;line-height:32px;overflow:hidden;white-space:nowrap;word-break:keep-all;word-wrap:normal;}
 /*****  optionsList E *****/
 
 .userHeadrs li {display:inline-block;*display:inline;*zoom:1;}
@@ -656,7 +673,7 @@ a.pRight {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:no
 .hotIcon {background-position:-192px -1443px;height:14px;width:33px;vertical-align:-1px;margin-left:5px;_overflow:hidden;}
 
 /*****  rightCont title  *****/
-.rContWrap {border:1px solid #D5D5D5;padding:1px;}
+.rContWrap {border:1px solid #D5D5D5;padding:1px;*zoom:1;}
 .titIH2 {background:url("http://static.cailang.com/img/index/righth2.png") center top no-repeat;height:29px;font:13px/29px "\5FAE\8F6F\96C5\9ED1";position:relative;}
 .changeTitle {color:#70798C;position:absolute;right:10px;top:0;text-shadow:none;font:12px/30px "\5b8b\4f53";}
 .tagObj {color:#b38412;background-position:0 -1333px;padding-left:18px;}
@@ -750,3 +767,72 @@ a.pRight {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:no
 .btnylSure {.bgp(0,-1655px);}
 .btnylCancel {.bgp(-67px,-1655px);}
 /*****  yyLayer E  *****/
+
+/*****  yy pull-down S  *****/
+.orgHeader {margin:0 auto;width:102px;}
+.orgHeaderImg img {border:1px solid #ccc}
+.orgHeaderName {color:#000;font:12px/1.5 'Microsoft Yahei';display:block;text-decoration:none;}
+.wdTxt {
+	color:#666;text-align:center;margin-top:10px;width:102px;
+	.sProList & {margin-top:0;}
+}
+.willBuyWrap {
+	border:1px solid #FEBA02;background-color:#FFFCF0;clear:both;overflow:hidden;*zoom:1;
+	.personCont {background-color:#fff;}
+}
+.btnCloseBuyLayer {
+	&:extend(.btn);
+	.bgp(right,-1665px);height:15px;width:15px;position:absolute;right:10px;top:15px;
+}
+.bgTuiWrap {background-color:#FEF2D0;height:32px;line-height:32px;padding:0 10px;}
+.cangBtnWrap {margin-top:10px;text-align:center;*zoom:1;clear:both;}
+.cangBtnWrap:after{content:"\200B";display:block;height:0;clear:both;}
+.tjgwListWrap {margin:10px;}
+.tjgwList {
+	font-size:0;overflow:hidden;margin-left:-15px;
+	li {	
+		.dib;
+		margin-left:20px;width:115px;
+	}
+}
+.sIndexLiChange {
+	margin:0 10px 0 !important;
+	.myPurTxt {width:505px;}
+	.myGwList .personCont {width:465px;}
+	.w435 {width:428px;}
+	.tjgwList li {border-bottom:none;padding-bottom:0;margin-top:0;margin-left:17px;}
+	.cangBtnWrap {margin-top:15px;}
+}
+.tGwImg {position:relative;}
+.tjgwInfo {text-align:center;color:#fff;font-size:12px;height:28px;width:115px;line-height:28px;position:absolute;top:87px;left:0;}
+.tjgwBg {background-color:#000;height:100%;width:100%;position:absolute;top:0;left:0;z-index:0;.opacity(50);}
+.zxgwListWrap {
+	padding:0 15px 10px;
+	.myInfo {
+		margin:0 !important;
+		.myName {width:72px;}
+	}
+	.myGwList {		
+		li {border-bottom:1px solid #FFECB8;margin-top:10px;}
+	}
+}
+/*****  yy pull-down E  *****/
+.btnSave2 {/*background-position:-67px -1228px;color:#fff;font:14px/28px 'Microsoft Yahei';height:29px;width:104px;text-align:center;*/height:38px;width:128px;background-position:right -1127px;font:14px/38px 'Microsoft Yahei';text-align:center;color:#fff;}
+
+.mt-10 {margin-top:-10px;}
+.h2Color {color:@color2;}
+
+/*****  active and space S  *****/
+.actImg {float:left;}
+.actListRight {color:#000;margin-left:120px;}
+.actListRight p {margin-bottom:5px;}
+.actList li {border-bottom:1px dotted #ccc;padding-bottom:10px;margin-top:20px;*zoom:1;}
+.actTitle {color:#000;}
+.actTitle:hover,a.c6:hover {text-decoration:underline;}
+.btnImg {&:extend(.btn);height:32px;width:62px;background-position:0 -974px;}
+.btnImg2,.btnImg:hover {background-position:-63px -974px;}
+.btnImgSpan {position:absolute;top:40%;right:0;}
+
+.btnBaom {.dib;background:url("@{eurl}btnbm.png") no-repeat;width:90px;height:34px;line-height:102px;overflow:hidden;}
+.btnBaom2 {.bgp(0,-35px);}
+/*****  active and space S  *****/
