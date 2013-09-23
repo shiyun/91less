@@ -111,7 +111,10 @@ body {font-family:arial,\5b8b\4f53;}
 }
 
 .searchBar {background:url("@{murl}bg_searchbar.gif") repeat-x;height:56px;}
-.orgTit {background-color:#222;color:#fff;line-height:52px;padding:0 20px;}
+.orgTit {
+	a {.dib;color:#fff;line-height:52px;padding:0 20px;margin-right:1px;&:hover {text-decoration:none;background-color:#222;}}
+	.curTit {background-color:#222;}
+}
 .search {margin-top:13px;}
 .sSelect {vertical-align:3px;}
 .searchWrap {
@@ -162,6 +165,8 @@ body {font-family:arial,\5b8b\4f53;}
 .navIcon1 {.bgp(0, -76px);}
 .navIcon2 {.bgp(0, -119px);}
 .navIcon3 {.bgp(0, -163px);}
+.navIcon4 {.bgp(0,-604px);}
+
 
 /*****  right cont  *****/
 .curPos {background-color:#FAFAFA;border-bottom: @mborder;line-height:40px;padding-left:15px;font-family:\5b8b\4f53;}
